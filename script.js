@@ -40,16 +40,6 @@ function activateMenuAtCurrentSection(section) {
   }
 }
 
-// Obtém o valor atual da variável CSS '--hue' definida no :root do documento
-let currentColor = getComputedStyle(document.documentElement).getPropertyValue(
-  '--hue'
-)
-
-// Define as constantes com valores de matiz para as cores usadas no site
-const purple = '280'
-const green = '170'
-const blue = '240'
-
 // Seleciona o elemento da barra de navegação pelo id 'navigation'
 const nav = document.getElementById('navigation')
 
@@ -75,21 +65,6 @@ function showBackToTopButtonOnScroll() {
   }
 }
 
-// Função para alterar a cor principal do site, atualizando a variável CSS '--hue'
-function changeColor(color) {
-  if (color == purple) {
-  // Se a cor for roxa, atualiza a variável CSS para '280'
-    document.documentElement.style.setProperty('--hue', purple)
-  }
-  // Se a cor for verde, atualiza a variável CSS para '170'
-  if (color == green) {
-    document.documentElement.style.setProperty('--hue', green)
-  }
-  // Se a cor for azul, atualiza a variável CSS para '240'
-  if (color == blue) {
-    document.documentElement.style.setProperty('--hue', blue)
-  }
-}
 
 // Função para abrir o menu responsivo, adicionando uma classe ao body
 function openMenu() {

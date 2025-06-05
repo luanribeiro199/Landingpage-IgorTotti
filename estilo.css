@@ -378,18 +378,6 @@ body.menu-expanded .menu {
   display: flex;
 }
 
-.purple {
-  background-color: hsl(280, 100%, 26%);
-}
-
-.green {
-  background-color: hsl(170, 100%, 26%);
-}
-
-.blue {
-  background-color: hsl(240, 100%, 26%);
-}
-
 .menu ul li a {
   color: #ffffff;
   text-decoration: none;
