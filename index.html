@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<!-- Declara o tipo de documento como HTML5 -->
+<html lang="pt-BR">
+<!-- Define a língua da página como português do Brasil -->
+<head>
+  <meta charset="UTF-8">
+  <!-- Define a codificação de caracteres para UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Configura a viewport para responsividade em dispositivos móveis -->
+  <title>Dr. Igor Totti | Especialista em Lentes de Resina Composta</title>
+  <!-- Define o título da página que aparece na aba do navegador -->
+  <link rel="icon" type="image/png" href="/assets/icon.png">
+  <!-- Define o ícone da página que aparece na aba do navegador -->
+  <link rel="stylesheet" href="/estilo.css">
+  <!-- Link para o arquivo CSS externo que estiliza a página -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Estabelece conexão antecipada para melhorar o carregamento da fonte Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Estabelece conexão antecipada com domínio de fontes estáticas do Google com permissão de CORS -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Importa a fonte 'DM Sans' com pesos 400 e 700 para uso no site -->
+</head>
+<body>
+  <!-- Corpo principal do documento HTML -->
+
+  <nav id="navigation" role="navigation" aria-label="Menu principal">
+  <!-- Elemento de navegação principal com id para estilização e manipulação -->
+    <div class="wrapper">
+    <!-- Container centralizado para manter o conteúdo alinhado -->
+      <a class="logo" href="#home" aria-label="Início da página - Dr. Igor Totti">Dr. Igor Totti</a>
+      <!-- Link que funciona como logo, levando à seção 'home' -->
+
+      <div class="menu">
+      <!-- Container para o menu de navegação -->
+        <ul>
+          <!-- Lista não ordenada para os itens do menu -->
+          <li><a onclick="closeMenu()" href="#home" aria-current="page">Início</a></li>
+          <!-- Link para a seção inicial com evento para fechar o menu ao clicar -->
+          <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+          <!-- Link para a seção de serviços -->
+          <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
+          <!-- Link para a seção sobre -->
+        </ul>
+
+        <a class="button" onclick="closeMenu()" href="#contact" role="button"  aria-label="Agendar avaliação">Agende sua avaliação</a>
+        <!-- Botão-link para a seção de contato para agendamento -->
+
+        <div class="social-links" aria-label="Redes sociais">
+        <!-- Container para os links das redes sociais -->
+          <a target="_blank" href="https://www.instagram.com/igortotti/" aria-label="Instagram do Dr. Igor"><span>Instagram</span></a>
+          <!-- Link para Instagram (ainda sem URL definida), abre em nova aba -->
+          <a target="_blank" href="https://www.facebook.com/profile.php?id=61575506466873" aria-label="Facebook do Dr. Igor"><span>Facebook</span></a>
+          <!-- Link para Facebook (ainda sem URL definida), abre em nova aba -->
+          <a target="_blank" href="https://wa.me/554299334179" aria-label="Converse pelo WhatsApp"><span>WhatsApp</span></a>
+          <!-- Link direto para WhatsApp com número já preenchido -->
+        </div>
+      </div>
+
+      <button aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()" class="open-menu"  aria-label="Abrir menu">
+      <!-- Botão para abrir o menu em dispositivos móveis; acessibilidade com aria -->
+        ☰
+        <!-- Ícone do menu -->
+      </button>
+      <button onclick="closeMenu()" class="close-menu" aria-label="Fechar menu">
+      <!-- Botão para fechar o menu -->
+        ×
+        <!-- Ícone de fechar -->
+      </button>
+    </div>
+  </nav>
+
+  <section id="home" role="main">
+  <!-- Seção inicial do site -->
+    <div class="wrapper">
+    <!-- Container centralizado -->
+      <div class="col-a">
+      <!-- Coluna A para texto e conteúdo principal -->
+        <header>
+          <!-- Cabeçalho da seção -->
+          <h4>ESPECIALISTA EM LENTES DE RESINA COMPOSTA 👨‍⚕️</h4>
+          <!-- Subtítulo pequeno -->
+          <h1>Transforme seu sorriso com técnicas avançadas e naturais</h1>
+          <!-- Título principal -->
+        </header>
+        <div class="content">
+        <!-- Conteúdo principal dentro da coluna -->
+          <p>
+            <strong>Dr. Igor Totti</strong> é referência em lentes de resina composta, 
+            com mais de 15 anos de experiência e mais de 3.000 sorrisos transformados. 
+            Na OdontoNew, uma das clínicas mais tradicionais de Guarapuava/PR, 
+            você encontra tratamento personalizado onde saúde e estética andam juntas.
+          </p>
+          <!-- Parágrafo com apresentação do especialista -->
+          <a class="button" href="https://wa.me/554299334179" target="_blank" role="button" aria-label="Agendar pelo WhatsApp (42) 9933-4179">
+          <!-- Botão-link para agendamento via WhatsApp -->
+            Agende pelo WhatsApp (42) 9933-4179
+          </a>
+        </div>
+      </div>
+      <div class="col-b">
+      <!-- Coluna B para imagem -->
+        <img src="/assets/Igor.png" alt="Uma foto do Dr. Igor Totti sorrindo descontraido">
+        <!-- Imagem do Dr. Igor com texto alternativo para acessibilidade -->
+      </div>
+      <div class="stats" aria-label="estatísticas do Dr. Igor ao longo do tempo">
+      <!-- Seção de estatísticas -->
+        <div class="stat">
+          <h3>+3.000</h3>
+          <p>Sorrisos transformados</p>
+        </div>
+        <div class="stat">
+          <h3>15+</h3>
+          <p>Anos de expertise</p>
+        </div>
+        <div class="stat">
+          <h3>100%</h3>
+          <p>Resultados naturais</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" aria-labelledby="servicos oferecidos pelo Dr. Igor Totti">
+  <!-- Seção de serviços oferecidos -->
+    <div class="wrapper">
+    <!-- Container centralizado -->
+      <header>
+        <!-- Cabeçalho da seção -->
+        <h4>Serviços Especializados</h4>
+        <h2>Destaque para Lentes de Resina Composta</h2>
+      </header>
+
+      <div class="cards"  role="list">
+      <!-- Container para cartões de serviços -->
+        <div class="card highlight" role="listitem">
+        <!-- Cartão destacado -->
+          <h3>🌟 Lentes de Resina Composta</h3>
+          <p>
+            <strong>Especialidade do Dr. Igor Totti</strong> - Técnica minimamente invasiva 
+            que corrige formato, cor e posição dos dentes com resultados imediatos 
+            e altamente naturais. Material durável que preserva a estrutura dental.
+          </p>
+          <!-- Descrição detalhada do serviço principal -->
+        </div>
+
+        <div class="card" role="listitem">
+          <h3>Clareamento Dental</h3>
+          <p>
+            Técnicas avançadas para clareamento dental eficaz e seguro, 
+            proporcionando um sorriso mais branco e radiante sem comprometer 
+            a saúde dos dentes.
+          </p>
+          <!-- Descrição do serviço de clareamento dental -->
+        </div>
+
+        <div class="card" role="listitem">
+          <h3>Harmonização Orofacial</h3>
+          <p>
+            Procedimentos complementares para harmonizar o sorriso com as 
+            características faciais, proporcionando equilíbrio e naturalidade.
+          </p>
+          <!-- Descrição do serviço de harmonização orofacial -->
+        </div>
+
+        <div class="card" role="listitem">
+          <h3>Restaurações Estéticas</h3>
+          <p>
+            Recuperação dental com materiais da mais alta qualidade que 
+            imitam perfeitamente a aparência do dente natural.
+          </p>
+          <!-- Descrição do serviço de restaurações -->
+        </div>
+
+        <div class="card" role="listitem">
+          <h3>Ortodontia Estética</h3>
+          <p>
+            Aparelhos transparentes e alinhadores invisíveis para correção 
+            da posição dos dentes com discrição e conforto.
+          </p>
+          <!-- Descrição do serviço de ortodontia estética -->
+        </div>
+
+        <div class="card" role="listitem">
+          <h3>Prevenção & Saúde</h3>
+          <p>
+            Cuidados preventivos e tratamentos para manter a saúde bucal 
+            em dia, base de qualquer sorriso bonito.
+          </p>
+          <!-- Descrição do serviço de prevenção e saúde bucal -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" aria-labelledby="sobre o Dr. Igor Totti">
+  <!-- Seção sobre o Dr. Igor -->
+    <div class="wrapper">
+      <div class="col-a">
+      <!-- Coluna para texto -->
+        <header>
+          <h4>Sobre o Dr. Igor</h4>
+          <h2>Expertise em Lentes de Resina Composta</h2>
+        </header>
+        <div class="content">
+          <p>
+            O <strong>Dr. Igor Totti</strong> se dedica especialmente às lentes de resina composta, 
+            uma técnica que domina como poucos. Seu trabalho é reconhecido pela 
+            naturalidade dos resultados e pelo cuidado extremo com a saúde bucal.
+          </p>
+          <p>
+            "Minha filosofia é simples: um sorriso bonito deve ser, antes de tudo, 
+            um sorriso saudável. As lentes de resina composta permitem transformações 
+            incríveis com mínimo desgaste dental", explica o Dr. Igor.
+          </p>
+          <p>
+            Com formação continuada e participação em congressos internacionais, 
+            o Dr. Igor traz para Guarapuava as técnicas mais modernas e comprovadas 
+            em odontologia estética.
+          </p>
+          <a href="https://wa.me/554299334179" target="_blank" class="button" role="button" aria-label="Conversar com o Dr. Igor via WhatsApp">
+          <!-- Botão para contato via WhatsApp -->
+            Fale diretamente com o Dr. Igor: (42) 9933-4179
+          </a>
+        </div>
+      </div>
+      <div class="col-b">
+      <!-- Coluna para imagem -->
+        <img src="/assets/img2.png" alt="Um Card do Dr. Igor Totti com sua foto escrito 'Especialista em lentes de resina'">
+        <!-- Imagem do Dr. Igor em ação -->
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" aria-labelledby="contato (informações)">
+  <!-- Seção de contato para agendamento -->
+    <div class="wrapper">
+      <div class="col-a">
+      <!-- Coluna para conteúdo textual -->
+        <div class="content">
+          <header>
+            <h2>Agende sua avaliação para lentes de resina!</h2>
+          </header>
+          <ul>
+            <!-- Lista de informações para contato -->
+            <li aria-label="Localização da clínica">📍 OdontoNew - Guarapuava/PR</li>
+            <li aria-label="Número de telefone para contato">📞 <strong>(42) 9933-4179</strong> (WhatsApp)</li>
+            <li aria-label="E-mail para contato">✉️ dr.igortotti@odontonew.com.br</li>
+            <li aria-label="Horário de atendimento">🕒 Seg-Sex: 9h às 18h30min | Sáb-Dom: Fechado</li>
+          </ul>
+          <a href="https://wa.me/554299334179" target="_blank" class="button" role="button" aria-label="Iniciar conversa com a clínica no WhatsApp">
+          <!-- Botão para agendar via WhatsApp -->
+            Agendar pelo WhatsApp
+          </a>
+          <p class="highlight-text">
+          <!-- Texto com destaque para condições exclusivas -->
+            Avaliação especializada para lentes de resina composta com 
+            <strong>condições exclusivas</strong> para novos pacientes.
+          </p>
+        </div>
+      </div>
+      <div class="col-b">
+      <!-- Coluna para imagem -->
+        <img src="/assets/img3.png" alt="Moça com o sorriso em lentes de resina, Resultados de lentes de resina composta feitas pelo Dr. Igor Totti">
+        <!-- Imagem ilustrativa dos resultados -->
+      </div>
+    </div>
+  </section>
+  
+  <div id="modalContato" class="modal hidden">
+    <div class="modal-content" role="dialog" aria-labelledby="modal de informações do usuário" aria-modal="true">
+      <button class="close-button" onclick="fecharModal()" aria-label="Fechar modal">✕</button>
+      <h2>Entre em contato</h2>
+      <p>Preencha seu nome e telefone para receber atendimento personalizado:</p>
+      <form>
+        <input type="text" placeholder="Seu nome" required aria-label="Nome"/>
+        <input type="tel" placeholder="Telefone (WhatsApp)" required aria-label="Telefone"/>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+  
+  <footer>
+  <!-- Rodapé do site -->
+    <div class="wrapper">
+      <div class="col-a">
+      <!-- Coluna para informações de copyright e marca -->
+        <p><strong>Dr. Igor Totti</strong></p>
+        <p><strong>Especialista em Lentes de Resina Composta</strong></p>
+        <p>©2025 Dr. Igor Totti - OdontoNew<br>Guarapuava/PR</p>
+        <p>Desenvolvido por Luan Ribeiro Productions</p>
+      </div>
+
+      <div class="col-b">
+      <!-- Coluna para informações de contato e redes sociais -->
+        <div class="contact-info">
+          <p><strong>Atendimento:</strong></p>
+          <p>(42) 9933-4179 (WhatsApp)</p>
+          <p>dr.igortotti@odontonew.com.br</p>
+        </div>
+        <div class="social-links">
+          <!-- Lista de ícones com links para redes sociais -->
+          <ul>
+            <li><a href="https://www.instagram.com/igortotti/" aria-label="Instagram Dr. Igor Totti"><img src="/assets/instagram.png" alt="Instagram"></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61575506466873" aria-label="Facebook Dr. Igor Totti"><img src="/assets/facebook.png" alt="Facebook"></a></li>
+            <li><a href="https://wa.me/554299334179" aria-label="WhatsApp Dr. Igor Totti"><img src="/assets/whatsapp.png" alt="WhatsApp"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Script para animações de rolagem (ScrollReveal) -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- Script JavaScript externo para funcionalidades da página, carregado após o HTML -->
+  <script src="/script.js" defer></script>
+</body>
+</html>
