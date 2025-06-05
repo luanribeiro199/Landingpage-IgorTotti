@@ -406,9 +406,19 @@ body.menu-expanded .menu {
 
 .social-links {
   display: flex;
-  align-items: center;
+  gap: 1rem;
   justify-content: center;
-  gap: 3.2rem;
+  padding: 1rem 0;
+}
+
+.social-links a {
+  font-size: 2rem; 
+  color: #fff; 
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #013220; 
 }
 
 body.menu-expanded .logo,
