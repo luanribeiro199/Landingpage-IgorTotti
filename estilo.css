@@ -412,7 +412,9 @@ body.menu-expanded .menu {
 }
 
 .social-links a {
-  display: none;
+  font-size: 2rem; 
+  color: #fff; 
+  transition: color 0.3s;
 }
 
 .social-links a:hover {
