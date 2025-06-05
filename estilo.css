@@ -945,3 +945,10 @@ footer .contact-info a:hover {
     justify-content: flex-start;
   }
 }
+
+/* Oculta o texto ao lado dos ícones no mobile */
+@media (max-width: 768px) {
+  .icon-text {
+      display: none;
+  }
+}
